@@ -22,3 +22,7 @@ df=pd.DataFrame(data)
 s=df[df.Edition == 1896]
 s.Sport.value_counts().plot(kind='bar',figsize=(12,4),colormap='Pastel1')
 plt.show()
+
+
+#seaborn plotting
+
