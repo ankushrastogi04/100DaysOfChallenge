@@ -53,6 +53,85 @@ for ele in final_lst:
         if key==query_name:
             print(format(sum(value)/len(scores),'.2f'))
                 
+#    The first line contains an integer , the total number of country stamps.
+# The next  lines contains the name of the country where the stamp is from.
+# Constraints
+
+
+# Output Format
+
+# Output the total number of distinct country stamps on a single line.
+
+# Sample Input
+
+# 7
+# UK
+# China
+# USA
+# France
+# New Zealand
+# UK
+# France 
+# Sample Output
+
+# 5 
+    
+    
+        lst=list()
+    n = int(input())
+    for _ in range(n):
+        country=input()
+        lst.append(country)
+    print(lst)
+    newLst=set(lst)
+    print(newLst)
+    cnt=0
+    for i in newLst:
+        cnt=cnt+1
+    
+    print(cnt) 
+    
+    
+#     Output Format
+
+# Output  lines.
+# On the first line, output the number of distinct words from the input.
+# On the second line, output the number of occurrences for each distinct word according to their appearance in the input.
+
+# Sample Input
+
+# 4
+# bcdef
+# abcdefg
+# bcde
+# bcdef
+# Sample Output
+
+# 3
+# 2 1 1
+    # Enter your code here. Read input from STDIN. Print output to STDOUT
+
+lst=list()
+dic=dict()
+nl=list()
+n = int(input())
+for _ in range(n):
+    words=input()
+    lst.append(words)
+    
+print(len(set(lst)))
+    
+for ele in lst:
+        if ele in dic:
+            dic[ele]+=1
+        else:
+            dic[ele]=1
+            
+#for k,v in dic.items():
+#nl=dic.values()
+print(*dic.values())       
+    
+
     
     
     
